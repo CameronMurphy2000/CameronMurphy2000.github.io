@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: seashell;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    font-size: 1.5rem;
+    position: fixed;
+    right: 0;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+li {
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
