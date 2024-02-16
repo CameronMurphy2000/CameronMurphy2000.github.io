@@ -5,6 +5,11 @@ function dark() {
     let elements = document.getElementsByClassName('box');
     let palette = document.getElementById('palette');
     let name = document.getElementById('name');
+    let contact = document.querySelector('.mobile-contact');
+
+    if (contact) {
+        contact.style.color = '#3b3b3b';
+    }
 
     if (name && name.tagName === 'P') {
 
@@ -27,7 +32,7 @@ function dark() {
     for (let i = 0; i < elements.length; i++) {
         elements[i].style.backgroundColor = '#222222';
     };
-
+    
     document.body.style.backgroundColor = '#3b3b3b';
     document.body.style.color = 'seashell';
     sun.style.color = '#3b3b3b';
@@ -39,13 +44,18 @@ function light() {
     let elements = document.getElementsByClassName('box');
     let palette = document.getElementById('palette');
     let name = document.getElementById('name');
+    let contact = document.querySelector('.mobile-contact');
+
+    if (contact) {
+        contact.style.display = 'block';
+    }
 
     if (name && name.tagName === 'P') {
 
         let linkElement = name.querySelector('a');
 
         if (linkElement) {
-            linkElement.style.color = '##3b3b3b';
+            linkElement.style.color = '#3b3b3b';
         };
     };
 
