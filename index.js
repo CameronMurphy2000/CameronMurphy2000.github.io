@@ -5,11 +5,6 @@ function dark() {
     let elements = document.getElementsByClassName('box');
     let palette = document.getElementById('palette');
     let name = document.getElementById('name');
-    let contact = document.querySelector('.mobile-contact');
-
-    if (contact) {
-        contact.style.color = '#3b3b3b';
-    }
 
     if (name && name.tagName === 'P') {
 
@@ -44,11 +39,6 @@ function light() {
     let elements = document.getElementsByClassName('box');
     let palette = document.getElementById('palette');
     let name = document.getElementById('name');
-    let contact = document.querySelector('.mobile-contact');
-
-    if (contact) {
-        contact.style.display = 'block';
-    }
 
     if (name && name.tagName === 'P') {
 
