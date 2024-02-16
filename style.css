@@ -253,3 +253,44 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        height: 60px;
+        left: 0;
+        font-size: 1.3rem;
+    }
+
+    #sun {
+        font-size: 1.5rem;
+        position: absolute;
+        left: 20px;
+        top: 18px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    #moon {
+        font-size: 1.5rem;
+        position: absolute;
+        left: 20px;
+        top: 18px;
+        cursor: pointer;
+    }
+
+    #palette-nav a {
+        color: #3b3b3b;
+        font-size: 1.6rem;
+        font-family: "Nanum Brush Script", "Roboto", sans-serif;
+        text-decoration: none !important;
+        position: relative;
+    }
+
+    .grid-container {
+        height: 800px;
+    }
+
+    .tool-list {
+        font-size: 2rem;
+    }
+}
