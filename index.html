@@ -26,6 +26,11 @@
     <!-- NAVBAR -->
     <nav>
         <div class="navbar">
+            <div class="light-dark">
+                <i class="fa-solid fa-moon" id="moon"></i>
+                <i class="fa-solid fa-sun" id="sun"></i>
+            </div>
+
             <ul class="nav-items">
                 <li id="palette-nav"><a href="#">Palette</a></li>
                 <li><a class="standard-link" href="#">Item 2</a></li>
@@ -50,7 +55,7 @@
             <div class="box box1">
                 <img src="https://placehold.co/600x400">
                 <div class="box-content">
-                    <h3 class="project-name"><a href="#">Palette</a></h3>
+                    <h3 class="project-name" id="palette"><a href="#">Palette</a></h3>
                     <p class="project-desc">Palette is a website I made to reference<br>anything colour related. From terminology<br>to a random colour generator Palette<br>can help.</p>
                     <p class="project-tools">HTML <i class="fa-brands fa-html5"></i>, CSS <i class="fa-brands fa-css3-alt"></i>, JavaScript <i class="fa-brands fa-js"></i></p>
                 </div>
@@ -116,7 +121,7 @@
     </main>
     <!-- FOOTER -->
     <footer>
-        <p><a href="contact.html">Cameron Murphy</a></p>
+        <p id="name"><a href="contact.html">Cameron Murphy</a></p>
     </footer>
 
     <script src="./index.js"></script>
