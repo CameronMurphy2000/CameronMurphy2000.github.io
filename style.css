@@ -12,6 +12,7 @@ body {
     align-items: center;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    height: auto;
 }
 
 /* NAVBAR */
@@ -19,6 +20,8 @@ body {
 .navbar {
     font-size: 1.5rem;
     position: fixed;
+    z-index: 100;
+    background: seashell;
     right: 0;
     height: 80px;
     width: 100vw;
@@ -37,13 +40,43 @@ li {
     margin: 15px;
 }
 
-a {
+.standard-link {
     text-decoration: none;
     color: #3b3b3b;
 }
 
-a:hover {
+.standard-link:hover {
     text-decoration: underline;
+}
+
+#palette-nav a {
+    color: #3b3b3b;
+    font-size: 1.8rem;
+    font-family: "Nanum Brush Script", "Roboto", sans-serif;
+    text-decoration: none !important;
+    position: relative;
+}
+
+#palette-nav a:hover {
+    text-decoration: none !important;
+}
+
+#palette-nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    left: 0;
+    background: url('brush-stroke.png') no-repeat;
+    background-size: 100% 100%;
+    bottom: -8px;
+    display: none;
+    text-decoration: none !important;
+}
+
+#palette-nav a:hover::before {
+    display: block;
+    text-decoration: none !important;
 }
 
 /* HEADER */
@@ -64,32 +97,75 @@ header {
 
 .description {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 /* MAIN */
 
-img {
-    border: 1px dotted red;
-    margin: 10px 5%;
-    width: 90%;
-    height: 50%;
-}
-
 .grid-container {
     width: 90vw;
-    height: 800px;
+    height: 1150px;
     display: grid;
     grid-template-columns: 3;
     grid-template-rows: 2;
     column-gap: 25px;
     row-gap: 15px;
+    margin: 20px;
+    max-width: 90vw;
+}
+
+h3 a {
+    color: #3b3b3b;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    font-family: "Nanum Brush Script", "Roboto", sans-serif;
+    text-decoration: none !important;
+    position: relative;
+}
+
+h3 a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    left: 0;
+    background: url('brush-stroke.png') no-repeat;
+    background-size: 100% 100%;
+    bottom: -8px;
+    display: none;
+
+}
+
+h3 a:hover::before {
+    display: block;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: calc(100% - 20px);
+    object-fit: cover;
+    margin: 5px 10px;
+    max-height: 60%;
 }
 
 .box {
-    border: 1px solid blue;
     position: relative;
+    overflow: hidden;
+    max-width: 100%;
     margin: 5px;
     background: rgb(255, 255, 255);
+}
+
+.box-content {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.project-tools {
+    font-style: italic;
 }
 
 .box1 {
@@ -132,4 +208,20 @@ img {
     grid-row-end: 2;
     grid-column-start: 3;
     grid-column-end: 4;
+}
+
+.tools {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.tool-list {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
 }
