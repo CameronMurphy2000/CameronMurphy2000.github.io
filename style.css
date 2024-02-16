@@ -310,10 +310,14 @@ footer a:hover {
 
     .mobile-contact {
         display: block;
-        font-size: 1.5rem;
         position: absolute;
+        font-size: 1.5rem;
         top: 18px;
         right: 20px;
+    }
+
+    .mobile-contact a {
+        color: #3b3b3b;
     }
 
     .grid-container {
