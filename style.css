@@ -36,19 +36,27 @@ body {
 }
 
 #sun {
+    color: hsl(39, 100%, 63%) !important;
+    background-color: #3b3b3b;
+    border-radius: 50%;
+    padding: .35rem;
     font-size: 2rem;
     position: absolute;
-    left: 40px;
-    top: 24px;
+    left: 35px;
+    top: 18px;
     cursor: pointer;
     display: none;
 }
 
 #moon {
+    color: hsl(182, 32%, 83%);
+    background-color: #3b3b3b;
+    border-radius: 50%;
+    padding: .35rem;
     font-size: 2rem;
     position: absolute;
-    left: 40px;
-    top: 24px;
+    left: 35px;
+    top: 18px;
     cursor: pointer;
 }
 
@@ -268,8 +276,8 @@ footer a:hover {
     #sun {
         font-size: 1.5rem;
         position: absolute;
-        left: 20px;
-        top: 18px;
+        left: 15px;
+        top: 15px;
         cursor: pointer;
         display: none;
     }
@@ -300,6 +308,16 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 390px) {
+    #sun {
+        top: 15px;
+        left: 15px;
+    }
+
+    #moon {
+        top: 15px;
+        left: 15px;
+    }
+
     .main-header {
         text-align: center;
     }
@@ -387,6 +405,16 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 375px) {
+    #sun {
+        top: 15px;
+        left: 15px;
+    }
+
+    #moon {
+        top: 15px;
+        left: 15px;
+    }
+
     .main-header {
         text-align: center;
     }
@@ -474,6 +502,16 @@ footer a:hover {
 }
 
 @media only screen and (min-width: 275px) and (max-width: 425px) {
+    #sun {
+        top: 15px;
+        left: 15px;
+    }
+
+    #moon {
+        top: 15px;
+        left: 15px;
+    }
+
     .main-header {
         text-align: center;
     }
