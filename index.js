@@ -5,6 +5,18 @@ function dark() {
     let elements = document.getElementsByClassName('box');
     let palette = document.getElementById('palette');
     let name = document.getElementById('name');
+    let nav = document.getElementById('nav');
+    let links = document.getElementsByClassName('standard-link');
+    let paletteNav = document.getElementById('palette-nav');
+
+    if (paletteNav && paletteNav.tagName === 'LI') {
+
+        let linkElement = paletteNav.querySelector('a');
+
+        if (linkElement) {
+            linkElement.style.color = 'seashell';
+        }
+    };
 
     if (name && name.tagName === 'P') {
 
@@ -28,9 +40,15 @@ function dark() {
         elements[i].style.backgroundColor = '#222222';
     };
     
+    for (let i = 0; i < links.length; i++) {
+        links[i].style.color = 'seashell';
+    };
+    
+    nav.style.backgroundColor = '#3b3b3b';
     document.body.style.backgroundColor = '#3b3b3b';
     document.body.style.color = 'seashell';
     sun.style.color = '#3b3b3b';
+    sun.style.backgroundColor = 'seashell';
     sun.style.display = 'block';
     moon.style.display = 'none';
 };
@@ -39,6 +57,18 @@ function light() {
     let elements = document.getElementsByClassName('box');
     let palette = document.getElementById('palette');
     let name = document.getElementById('name');
+    let nav = document.getElementById('nav');
+    let links = document.getElementsByClassName('standard-link');
+    let paletteNav = document.getElementById('palette-nav');
+
+    if (paletteNav && paletteNav.tagName === 'LI') {
+
+        let linkElement = paletteNav.querySelector('a');
+
+        if (linkElement) {
+            linkElement.style.color = '#3b3b3b';
+        }
+    };
 
     if (name && name.tagName === 'P') {
 
@@ -62,6 +92,11 @@ function light() {
         elements[i].style.backgroundColor = 'white';
     };
 
+    for (let i = 0; i < links.length; i++) {
+        links[i].style.color = '#3b3b3b';
+    };
+
+    nav.style.backgroundColor = ('seashell');
     document.body.style.background = 'seashell';
     document.body.style.color = '#3b3b3b';
     sun.style.display = 'none';
