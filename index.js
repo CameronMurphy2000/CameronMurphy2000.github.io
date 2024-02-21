@@ -103,5 +103,30 @@ function light() {
     moon.style.display = 'block';
 };
 
-moon.onclick = dark;
-sun.onclick = light;
+function toggleDark() {
+
+    const boxes = document.querySelectorAll('.boxborder');
+   
+    boxes.forEach(box => {
+        box.classList.add('dark-mode');
+    });
+};
+
+function toggleLight() {
+
+    const boxes = document.querySelectorAll('.boxborder');
+
+    boxes.forEach(box => {
+        box.classList.remove('dark-mode');
+    });
+};
+
+moon.onclick = function() {
+    dark();
+    toggleDark();
+};
+
+sun.onclick = function() {
+    light();
+    toggleLight();
+};
