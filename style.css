@@ -341,6 +341,42 @@ header {
     transition: color 0.25s linear;
 }
 
+.portfolio-info {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-info-header {
+    font-size: 2rem;
+}
+
+.portfolio-info-desc {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.portfolio-info-tools {
+    font-size: 1.2rem;
+}
+
+.portfolio-info-browsers {
+    font-size: 1.2rem;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
 /* FOOTER */
 
 footer a {
