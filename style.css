@@ -820,12 +820,14 @@ footer a:hover {
 
     .portfolio-info-tools-browsers-mobile ul {
         display: flex;
+        padding: 0;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .portfolio-info-tools-browsers-mobile ul li {
         font-size: 2rem;
-        text-align: center;
     }
 }
 
