@@ -675,6 +675,28 @@ footer a:hover {
         justify-content: center;
         gap: 10px;  
     }
+
+    .portfolio-info-tools {
+        display: none;
+    }
+
+    .portfolio-info-browsers {
+        display: none;
+    }
+
+    .portfolio-info-tools-browsers-mobile {
+        display: block;
+    }
+
+    .portfolio-info-tools-browsers-mobile ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-info-tools-browsers-mobile ul li {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 275px) and (max-width: 425px) {
