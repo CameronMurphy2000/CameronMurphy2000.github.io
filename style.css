@@ -390,11 +390,11 @@ header {
 }
 
 .green {
-    color: green;
+    color: hsl(120, 98%, 38%);
 }
 
 .red {
-    color: red;
+    color: hsl(0, 100%, 61%);
 }
 
 /* FOOTER */
@@ -803,6 +803,7 @@ footer a:hover {
 
     .portfolio-info-tools-browsers-mobile ul li {
         font-size: 2rem;
+        text-align: center;
     }
 }
 
