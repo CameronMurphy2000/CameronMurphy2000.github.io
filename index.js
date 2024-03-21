@@ -106,6 +106,11 @@ function light() {
 function toggleDark() {
 
     const boxes = document.querySelectorAll('.boxborder');
+    const lines = document.querySelectorAll('.hard-line');
+
+    lines.forEach(line => {
+        line.classList.add('dark-mode');
+    });
    
     boxes.forEach(box => {
         box.classList.add('dark-mode');
@@ -115,6 +120,11 @@ function toggleDark() {
 function toggleLight() {
 
     const boxes = document.querySelectorAll('.boxborder');
+    const lines = document.querySelectorAll('.hard-line');
+
+    lines.forEach(line => {
+        line.classList.remove('dark-mode');
+    });
 
     boxes.forEach(box => {
         box.classList.remove('dark-mode');
