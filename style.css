@@ -150,6 +150,15 @@ header {
     max-width: 90vw;
 }
 
+.project-name a {
+    color: #3b3b3b;
+    text-decoration: none;
+}
+
+.project-name a:hover {
+    text-decoration: underline;
+}
+
 #palette a {
     color: #3b3b3b;
     margin: 0;
@@ -238,6 +247,14 @@ header {
     border-left: none;
     border-top: none;
     transition: height 0.5s ease-out, width 0.5s ease-out 0.5s;
+}
+
+.dark-mode a {
+    color: seashell;
+}
+
+.dark-mode a:hover {
+    text-decoration: underline;
 }
 
 .dark-mode::before,

@@ -107,6 +107,11 @@ function toggleDark() {
 
     const boxes = document.querySelectorAll('.boxborder');
     const lines = document.querySelectorAll('.hard-line');
+    const links = document.querySelectorAll('.project-name a');
+
+    links.forEach(link => {
+        link.classList.add('dark-mode');
+    });
 
     lines.forEach(line => {
         line.classList.add('dark-mode');
